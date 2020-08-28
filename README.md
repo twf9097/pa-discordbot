@@ -13,7 +13,7 @@ not providing windows instructions someone else do that
 
 then set the token
 ```
-export PA_DISCORD_TOKEN "blah blah your token lol"
+export PA_DISCORD_TOKEN="blah blah your token lol"
 python start.py
 ```
 it is different on windows but i am not going to tell you how to do it :)
