@@ -13,4 +13,7 @@ class Quote(Base):
     author = Column(String)
     message = Column(String)
     time_sent = Column(DateTime)
+    server = Column(String)
+    added_by = Column(String)
+    number = Column(Integer)
 
