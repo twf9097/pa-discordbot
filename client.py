@@ -1,6 +1,6 @@
 import discord
 
-client = discord.Client()
+client = discord.ext.commands.Bot()
 
 
 @client.event
