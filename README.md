@@ -11,6 +11,11 @@ pip install -r requirements.txt
 ```
 not providing windows instructions someone else do that
 
+make the database
+```
+PYTHONPATH=. alembic upgrade head
+```
+
 then set the token
 ```
 export PA_DISCORD_TOKEN="blah blah your token lol"
