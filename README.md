@@ -9,7 +9,13 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-not providing windows instructions someone else do that
+
+for windows it's pretty much the same, just
+```
+python3 -m venv venv
+.\env\Scripts\activate
+pip install -r requirements.txt
+```
 
 make the database
 ```
