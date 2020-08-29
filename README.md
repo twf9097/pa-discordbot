@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 make the database
 ```
-PYTHONPATH=. alembic upgrade head
+alembic upgrade head
 ```
 
 then set the token
