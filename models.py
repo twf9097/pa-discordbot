@@ -26,9 +26,3 @@ class Server(Base):
     # if your server name has more than 100 chars tough luck
     name = Column(String(100))
     muted_role_id = Column(Integer)
-
-class User(Base):
-    __tablename__ = 'users'
-    id = Column(Integer, primary_key=True)
-    user_id = Column(BIGINT(unsigned=True), unique=True)
-    server = Column(Integer, ForeignKey('servers.id'))
