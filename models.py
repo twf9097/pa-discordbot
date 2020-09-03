@@ -27,3 +27,12 @@ class Server(Base):
     name = Column(String(100))
     muted_role_id = Column(Integer)
     unmuted_role_id = Column(Integer)
+
+class Mute(Base):
+    __tablename__ = 'mutes'
+    id = Column(Integer, primary_key=True)
+
+    server_id = Column(BIGINT(unsigned=True))
+    muted_id = Column(Integer)
+    muter_id = Column(Integer)
+    expiration_time = Column(DateTime)
