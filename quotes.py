@@ -45,6 +45,11 @@ class Quotes(commands.Cog):
             session.add(q)
             session.commit()
             await ctx.send(f'added. it\'s quote {q.number}')
+            
+    @commands.command()       
+    async def allquotes(self, ctx):
+        for i in range(1, highest.number+1):
+            quote(i)
 
 
 
