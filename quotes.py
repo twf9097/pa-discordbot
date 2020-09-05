@@ -46,10 +46,13 @@ class Quotes(commands.Cog):
             session.commit()
             await ctx.send(f'added. it\'s quote {q.number}')
             
+   #this is suppost to be a command to show all quotes         
     @commands.command()       
     async def allquotes(self, ctx):
+        #no idea what the async does, what the @command.commands does or what ctx is but they look inprtent.  
         for i in range(1, highest.number+1):
             quote(i)
+            #code is suppot to call the quote command for every quote in list
 
 
 
